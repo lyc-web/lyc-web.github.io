@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyc.github.io</id>
     <title>龙泳成的小屋</title>
-    <updated>2021-06-29T13:51:46.113Z</updated>
+    <updated>2021-06-29T14:59:09.936Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyc.github.io"/>
     <link rel="self" href="https://lyc.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://lyc.github.io/images/avatar.png</logo>
     <icon>https://lyc.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, 龙泳成的小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[测试1]]></title>
+        <id>https://lyc.github.io/post/ce-shi-1/</id>
+        <link href="https://lyc.github.io/post/ce-shi-1/">
+        </link>
+        <updated>2021-06-29T13:53:07.000Z</updated>
+        <summary type="html"><![CDATA[<p>📲<img src="https://lyc.github.io/post-images/1624974811785.jpg" alt="" loading="lazy"></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>📲<img src="https://lyc.github.io/post-images/1624974811785.jpg" alt="" loading="lazy"></p>
+<!-- more -->
+<hr>
+<h2 id="武器就肯定不会">武器就肯定不会</h2>
+<pre><code>wkj2i
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello world]]></title>
         <id>https://lyc.github.io/post/hello-world/</id>
