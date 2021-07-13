@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyc-web.github.io</id>
     <title>lyc-web</title>
-    <updated>2021-06-30T16:39:05.587Z</updated>
+    <updated>2021-07-13T08:54:42.809Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyc-web.github.io"/>
     <link rel="self" href="https://lyc-web.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://lyc-web.github.io/images/avatar.png</logo>
     <icon>https://lyc-web.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, lyc-web</rights>
+    <entry>
+        <title type="html"><![CDATA[测试页面]]></title>
+        <id>https://lyc-web.github.io/post/ce-shi-ye-mian/</id>
+        <link href="https://lyc-web.github.io/post/ce-shi-ye-mian/">
+        </link>
+        <updated>2021-07-13T08:53:34.000Z</updated>
+        <content type="html"><![CDATA[<p>潇洒撒1额地区的的</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[本文用于测试Gridea]]></title>
         <id>https://lyc-web.github.io/post/ben-wen-yong-yu-ce-shi-gridea/</id>
