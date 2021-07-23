@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" >
 
-<title>测试页面 | lyc-web</title>
+<title>1.1.03:对齐输出 | lyc-web</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://lyc-web.github.io/favicon.ico?v=1626166440929">
+<link rel="shortcut icon" href="https://lyc-web.github.io/favicon.ico?v=1627023807344">
 <link rel="stylesheet" href="https://lyc-web.github.io/styles/main.css">
 
 
@@ -24,8 +24,12 @@
 
 
 
-    <meta name="description" content="潇洒撒1额地区的的
-" />
+    <meta name="description" content="描述
+读入三个整数，按每个整数占8个字符的宽度，右对齐输出它们。输入只有一行，包含三个整数，整数之间以一个空格分开。输出只有一行，按照格式要求依次输出三个整数，之间以一个空格分开。
+样例输入
+123456789 0 -1
+样例输出
+1234..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -35,7 +39,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://lyc-web.github.io">
-        <img src="https://lyc-web.github.io/images/avatar.png?v=1626166440929" class="site-logo">
+        <img src="https://lyc-web.github.io/images/avatar.png?v=1627023807344" class="site-logo">
         <h1 class="site-title">lyc-web</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -68,6 +72,12 @@
           </a>
         
       
+        
+          <a href="/categories" class="site-nav">
+            分类
+          </a>
+        
+      
     </div>
   </div>
   <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
@@ -97,11 +107,42 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">测试页面</h2>
+            <h2 class="post-title">1.1.03:对齐输出</h2>
             <div class="post-date">2021-07-13</div>
             
             <div class="post-content" v-pre>
-              <p>潇洒撒1额地区的的</p>
+              <h1 id="描述"><strong>描述</strong></h1>
+<p>读入三个整数，按每个整数占8个字符的宽度，右对齐输出它们。<strong>输入</strong>只有一行，包含三个整数，整数之间以一个空格分开。<strong>输出</strong>只有一行，按照格式要求依次输出三个整数，之间以一个空格分开。</p>
+<h1 id="样例输入"><strong>样例输入</strong></h1>
+<p><code>123456789 0 -1</code></p>
+<h1 id="样例输出"><strong>样例输出</strong></h1>
+<p><code>123456789 0 -1</code></p>
+<h1 id="code">CODE</h1>
+<pre><code class="language-python">s = input().split()
+print(&quot;%8s %8s %8s&quot; % (s[0], s[1], s[2]), end='')
+</code></pre>
+<h1 id="分析">分析</h1>
+<ol>
+<li>输入
+<ol>
+<li>题目要求的是输入一行，其中包含三个整数，而py中用函数 <code>input()</code>来读入数据时，读入的是一个字符串，其中包含空格，我们要对数据进行格式化输出，就要将其进行分割，而函数是 <code>split()</code>就是对字符串进行分割用的，其中分隔符包括：空格，换行（\n），制表符（\t）</li>
+</ol>
+</li>
+<li>输出
+<ol>
+<li>
+<p>格式化输出</p>
+<p>右对齐输出，用 <code>%s</code> 就是对字符串进行右对齐，也就是说，默认右对齐输出，而 <code>%-s</code> 则是左对齐输出，在中间加 数字就是表示所占字符的宽度，如 <code>%8s</code> 就是占8个字符宽度右对齐输出</p>
+</li>
+<li>
+<p>题目要求</p>
+<p>这是我在做题时碰到的一个坑，题目要求时每个数字中间用一个空格隔开，但是我呢，以为看起来已经隔开了，其实没有, <code>%8s</code> 其实是这个字符占8个长度，不够的用空格来补充，那么，我没加空格输出的话，事实上就是三个字符黏在一起的，所以，一定要在输出语句中手动加入空格</p>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="资料参考">资料参考</h1>
+<p><a href="https://www.cnblogs.com/qinchao0317/p/10699717.html">python基础_格式化输出（%用法和format用法）</a></p>
 
             </div>
             
