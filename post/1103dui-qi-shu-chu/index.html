@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>本文用于测试Gridea | lyc-web</title>
+<title>1.1.03:对齐输出 | lyc-web</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,10 +18,13 @@
 
 
 
-    <meta name="description" content="本文用于测试gridea，检验折腾差不多一天的成果。
-
-其实这个Gridea要弄得话挺好弄的，但是由于自己的原因，搞了好久好久，不明其理，总是不能按照自己的样子进行，所以就搞了好久。现在好了，弄得差不多了。至于这个折腾的过程，我以后在发上来..." />
-    <meta name="keywords" content="Gridea" />
+    <meta name="description" content="描述
+读入三个整数，按每个整数占8个字符的宽度，右对齐输出它们。输入只有一行，包含三个整数，整数之间以一个空格分开。输出只有一行，按照格式要求依次输出三个整数，之间以一个空格分开。
+样例输入
+123456789 0 -1
+样例输出
+1234..." />
+    <meta name="keywords" content="NOI刷题" />
   </head>
   <body>
     <div id="app" class="main">
@@ -92,25 +95,49 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">本文用于测试Gridea</h2>
-            <div class="post-date">2021-06-30</div>
-            
-              <div class="feature-container" style="background-image: url('https://lyc-web.github.io/post-images/ben-wen-yong-yu-ce-shi-gridea.jpg')">
-              </div>
+            <h2 class="post-title">1.1.03:对齐输出</h2>
+            <div class="post-date">2021-07-23</div>
             
             <div class="post-content" v-pre>
-              <p>本文用于测试gridea，检验折腾差不多一天的成果。</p>
-<!-- more -->
-<h2 id="其实这个gridea要弄得话挺好弄的但是由于自己的原因搞了好久好久不明其理总是不能按照自己的样子进行所以就搞了好久-现在好了弄得差不多了-至于这个折腾的过程我以后在发上来吧-现在我还有一个很重要的任务要去做-复习大物">其实这个Gridea要弄得话挺好弄的，但是由于自己的原因，搞了好久好久，不明其理，总是不能按照自己的样子进行，所以就搞了好久。现在好了，弄得差不多了。至于这个折腾的过程，我以后在发上来吧。现在，我还有一个很重要的任务要去做-----复习大物！</h2>
-<p>搞了这么久，昨天搞了一晚上，今天又搞了一个早上，合着我已经把我的复习时间奉献给了这个博客，希望我能在这个博客进行写作并坚持下去！白啊白，复习去了。</p>
-<figure data-type="image" tabindex="1"><img src="https://lyc-web.github.io/post-images/1625044792259.png" alt="" loading="lazy"></figure>
+              <h1 id="描述"><strong>描述</strong></h1>
+<p>读入三个整数，按每个整数占8个字符的宽度，右对齐输出它们。<strong>输入</strong>只有一行，包含三个整数，整数之间以一个空格分开。<strong>输出</strong>只有一行，按照格式要求依次输出三个整数，之间以一个空格分开。</p>
+<h1 id="样例输入"><strong>样例输入</strong></h1>
+<p><code>123456789 0 -1</code></p>
+<h1 id="样例输出"><strong>样例输出</strong></h1>
+<p><code>123456789 0 -1</code></p>
+<h1 id="code">CODE</h1>
+<pre><code class="language-python">s = input().split()
+print(&quot;%8s %8s %8s&quot; % (s[0], s[1], s[2]), end='')
+</code></pre>
+<h1 id="分析">分析</h1>
+<ol>
+<li>输入
+<ol>
+<li>题目要求的是输入一行，其中包含三个整数，而py中用函数 <code>input()</code>来读入数据时，读入的是一个字符串，其中包含空格，我们要对数据进行格式化输出，就要将其进行分割，而函数是 <code>split()</code>就是对字符串进行分割用的，其中分隔符包括：空格，换行（\n），制表符（\t）</li>
+</ol>
+</li>
+<li>输出
+<ol>
+<li>
+<p>格式化输出</p>
+<p>右对齐输出，用 <code>%s</code> 就是对字符串进行右对齐，也就是说，默认右对齐输出，而 <code>%-s</code> 则是左对齐输出，在中间加 数字就是表示所占字符的宽度，如 <code>%8s</code> 就是占8个字符宽度右对齐输出</p>
+</li>
+<li>
+<p>题目要求</p>
+<p>这是我在做题时碰到的一个坑，题目要求时每个数字中间用一个空格隔开，但是我呢，以为看起来已经隔开了，其实没有, <code>%8s</code> 其实是这个字符占8个长度，不够的用空格来补充，那么，我没加空格输出的话，事实上就是三个字符黏在一起的，所以，一定要在输出语句中手动加入空格</p>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="资料参考">资料参考</h1>
+<p><a href="https://www.cnblogs.com/qinchao0317/p/10699717.html">python基础_格式化输出（%用法和format用法）</a></p>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://lyc-web.github.io/tag/mvJ-ejW9z/" class="tag">
-                    Gridea
+                  <a href="https://lyc-web.github.io/tag/CAtDQ_rmB/" class="tag">
+                    NOI刷题
                   </a>
                 
               </div>
@@ -118,9 +145,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://lyc-web.github.io/post/hello-gridea/">
+                <a href="https://lyc-web.github.io/post/ben-wen-yong-yu-ce-shi-gridea/">
                   <h3 class="post-title">
-                    Hello Gridea
+                    本文用于测试Gridea
                   </h3>
                 </a>
               </div>
