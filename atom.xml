@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyc-web.github.io</id>
     <title>lyc-web</title>
-    <updated>2021-07-23T07:22:46.273Z</updated>
+    <updated>2021-07-23T07:31:41.274Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyc-web.github.io"/>
     <link rel="self" href="https://lyc-web.github.io/atom.xml"/>
@@ -17,7 +17,11 @@
         </link>
         <updated>2021-07-23T07:21:46.000Z</updated>
         <content type="html"><![CDATA[<h1 id="描述"><strong>描述</strong></h1>
-<p>读入三个整数，按每个整数占8个字符的宽度，右对齐输出它们。<strong>输入</strong>只有一行，包含三个整数，整数之间以一个空格分开。<strong>输出</strong>只有一行，按照格式要求依次输出三个整数，之间以一个空格分开。</p>
+<p>读入三个整数，按每个整数占8个字符的宽度，右对齐输出它们。<br>
+<strong>输入</strong><br>
+只有一行，包含三个整数，整数之间以一个空格分开。<br>
+<strong>输出</strong><br>
+只有一行，按照格式要求依次输出三个整数，之间以一个空格分开。</p>
 <h1 id="样例输入"><strong>样例输入</strong></h1>
 <p><code>123456789 0 -1</code></p>
 <h1 id="样例输出"><strong>样例输出</strong></h1>
