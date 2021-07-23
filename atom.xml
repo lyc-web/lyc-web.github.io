@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lyc-web.github.io</id>
     <title>lyc-web</title>
-    <updated>2021-07-23T07:18:02.795Z</updated>
+    <updated>2021-07-23T07:20:07.474Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lyc-web.github.io"/>
     <link rel="self" href="https://lyc-web.github.io/atom.xml"/>
@@ -10,46 +10,6 @@
     <logo>https://lyc-web.github.io/images/avatar.png</logo>
     <icon>https://lyc-web.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, lyc-web</rights>
-    <entry>
-        <title type="html"><![CDATA[1.1.03:对齐输出]]></title>
-        <id>https://lyc-web.github.io/post/ce-shi-ye-mian/</id>
-        <link href="https://lyc-web.github.io/post/ce-shi-ye-mian/">
-        </link>
-        <updated>2021-07-13T08:53:34.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="描述"><strong>描述</strong></h1>
-<p>读入三个整数，按每个整数占8个字符的宽度，右对齐输出它们。<strong>输入</strong>只有一行，包含三个整数，整数之间以一个空格分开。<strong>输出</strong>只有一行，按照格式要求依次输出三个整数，之间以一个空格分开。</p>
-<h1 id="样例输入"><strong>样例输入</strong></h1>
-<p><code>123456789 0 -1</code></p>
-<h1 id="样例输出"><strong>样例输出</strong></h1>
-<p><code>123456789 0 -1</code></p>
-<h1 id="code">CODE</h1>
-<pre><code class="language-python">s = input().split()
-print(&quot;%8s %8s %8s&quot; % (s[0], s[1], s[2]), end='')
-</code></pre>
-<h1 id="分析">分析</h1>
-<ol>
-<li>输入
-<ol>
-<li>题目要求的是输入一行，其中包含三个整数，而py中用函数 <code>input()</code>来读入数据时，读入的是一个字符串，其中包含空格，我们要对数据进行格式化输出，就要将其进行分割，而函数是 <code>split()</code>就是对字符串进行分割用的，其中分隔符包括：空格，换行（\n），制表符（\t）</li>
-</ol>
-</li>
-<li>输出
-<ol>
-<li>
-<p>格式化输出</p>
-<p>右对齐输出，用 <code>%s</code> 就是对字符串进行右对齐，也就是说，默认右对齐输出，而 <code>%-s</code> 则是左对齐输出，在中间加 数字就是表示所占字符的宽度，如 <code>%8s</code> 就是占8个字符宽度右对齐输出</p>
-</li>
-<li>
-<p>题目要求</p>
-<p>这是我在做题时碰到的一个坑，题目要求时每个数字中间用一个空格隔开，但是我呢，以为看起来已经隔开了，其实没有, <code>%8s</code> 其实是这个字符占8个长度，不够的用空格来补充，那么，我没加空格输出的话，事实上就是三个字符黏在一起的，所以，一定要在输出语句中手动加入空格</p>
-</li>
-</ol>
-</li>
-</ol>
-<h1 id="资料参考">资料参考</h1>
-<p><a href="https://www.cnblogs.com/qinchao0317/p/10699717.html">python基础_格式化输出（%用法和format用法）</a></p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[本文用于测试Gridea]]></title>
         <id>https://lyc-web.github.io/post/ben-wen-yong-yu-ce-shi-gridea/</id>
